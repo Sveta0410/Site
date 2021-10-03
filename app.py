@@ -21,7 +21,6 @@ def index_post():
     langTo = request.form['langTo']
     original_text = request.form['word']
     print(original_text)
-    target_language = 'ru'
 
     key = os.environ['KEY']
     endpoint = os.environ['ENDPOINT']
