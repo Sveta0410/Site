@@ -17,19 +17,30 @@
         </ul>
     </div>
 </nav>
-<form action="\" method="post">
 
+<form action="/translate" method="post">
+
+    <p>Перевести с
+    <select name="langFrom">
+        <option value="en"selected>Английского</option>
+        <option value="ru">Русского</option>
+        <option value="es" >Испанского</option>
+    </select>
+    на
+    <select name="langTo">
+        <option value="en">Английский</option>
+        <option value="ru"selected>Русский</option>
+        <option value="es" >Испанский</option>
+    </select>
 
     <div class="form-group">
-        <label for="exampleFormControlInput1">Слово:</label>
-        <input type="text" class="form-control" name="word" placeholder=" Hello ">
+        <label for="exampleFormControlInput1">Слово для перевода:</label>
+        <input type="text" class="form-control" name="word"  placeholder=" Введите слово ">
     </div>
 
     <div class="form-group">
-
-        <button class="btn btn-dark" type="submit" formmethod="post">Перевести</button>
+        <button class="btn btn-dark" type="submit" formmethod="post" >Перевести</button>
     </div>
-
 </form>
 </body>
 </html>
