@@ -20,7 +20,6 @@ def index_post():
     langFrom = request.form['langFrom']
     langTo = request.form['langTo']
     original_text = request.form['word']
-    print(original_text)
 
     key = os.environ['KEY']
     endpoint = os.environ['ENDPOINT']
